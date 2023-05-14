@@ -9,8 +9,8 @@ function Header() {
                     <h1>#VANLIFE</h1>
                 </Link>
                 <nav>
-                    <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
+                    <Link to="/vans">Vans</Link>
                 </nav>
             </div>
         </div>

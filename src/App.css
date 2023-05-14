@@ -7,15 +7,13 @@ body {
     margin: 0;
     padding: 0;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
-  }
+}
 
 nav > a {
     text-decoration: none;
 }
-
-
 
 :root {
     --header-height: 111px;
@@ -109,7 +107,6 @@ nav > a {
     height: calc(100vh + (var(--footer-height)));
     margin-bottom: 53px;
     overflow: hidden;
-    
 }
 
 .about-wrapper button {
@@ -121,12 +118,12 @@ nav > a {
 }
 
 .about-wrapper {
-    overflow:scroll;
+    overflow: scroll;
 }
 
-.about-wrapper::-webkit-scrollbar{
+.about-wrapper::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .about-text h3 {
     font-size: 2rem;
@@ -163,6 +160,82 @@ nav > a {
     width: 100%;
     height: 100%;
     position: center;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
     background-position: center center;
+}
+.vans-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.van-nav {
+    margin-top: 54px;
+    margin-bottom: 56px;
+}
+.van-nav nav {
+    display: flex;
+}
+
+.van-nav a {
+    margin-left: 20px;
+}
+
+.van-nav h3 {
+    font-weight: 700;
+    font-size: 37px;
+}
+
+.van-nav button {
+    height: 37px;
+    width: 104px;
+    background-color: #ffead0;
+
+    border: none;
+}
+
+.van-nav p {
+    margin-left: 40px;
+}
+.van-wrapper {
+    height: 380px;
+    max-width: 311px;
+    margin-top: 30px;
+    margin-bottom: 86px;
+}
+
+.van-wrapper h4,
+p,
+img,
+button {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.van-wrapper > button {
+    height: 34px;
+    width: 86px;
+    background-color: rgba(225, 118, 84, 1);
+    border: none;
+    border-radius: 7px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 600;
+}
+
+.van-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.van-wrapper > button {
+    height: 34px;
+    width: 86px;
+}
+
+.van-img {
+    max-height: 100%;
+    width: 100%;
 }
