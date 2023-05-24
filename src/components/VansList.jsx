@@ -22,6 +22,7 @@ function VansList() {
 
     const vanElement = vans.map((van) => (
         <div key={van.id} className="van-wrapper">
+            <Link to={`./${van.id}`}>
             <img className="van-img" src={van.imageUrl} alt="img" />
             <div className="van-info">
                 <h4>{van.name}</h4>
@@ -30,7 +31,12 @@ function VansList() {
                     /day
                 </p>
             </div>
-            <button>{van.type}</button>
+            <button>
+                
+                    {van.type}
+                
+            </button>
+            </Link>
         </div>
     ));
 

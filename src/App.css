@@ -87,9 +87,10 @@ nav > a {
     font-weight: 800;
 }
 
-.home-wrapper > p {
+.home-wrapper p {
     margin-top: 22px;
     width: 494px;
+    color:white 
 }
 
 .home-wrapper > button {
@@ -214,7 +215,7 @@ button {
     margin: 0;
 }
 
-.van-wrapper > button {
+.van-wrapper button {
     height: 34px;
     width: 86px;
     background-color: rgba(225, 118, 84, 1);
@@ -225,9 +226,21 @@ button {
     font-weight: 600;
 }
 
+.van-wrapper a,
+h1,
+p {
+    text-decoration: none;
+}
+
+.van-wrapper h4,
+p {
+    color: black;
+}
+
 .van-info {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 .van-wrapper > button {
@@ -238,4 +251,59 @@ button {
 .van-img {
     max-height: 100%;
     width: 100%;
+}
+
+.detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.detail-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - (var(--footer-height) + var(--header-height)));
+}
+
+.detail-page h3 {
+    font-size: 2rem;
+}
+
+
+.vans-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.vans-detail img {
+    align-self: center;
+    margin-top: 41px;
+    width: 50%;
+    border-radius: 15px;
+}
+
+.detail-page a {
+    margin-top: 40px;
+}
+
+.detail-rent {
+    margin-top: 52px;
+    height: 50px;
+    color: white;
+    background-color: rgba(255, 140, 56, 1);
+    border-radius: 7px;
+    margin-bottom: 65px;
+}
+
+.van-type {
+    height: 34px;
+    width: 86px;
+    background-color: rgba(225, 118, 84, 1);
+    border: none;
+    border-radius: 7px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 600;
+    margin-top: 52px;
 }
