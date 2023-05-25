@@ -90,7 +90,7 @@ nav > a {
 .home-wrapper p {
     margin-top: 22px;
     width: 494px;
-    color:white 
+    color: white;
 }
 
 .home-wrapper > button {
@@ -105,7 +105,7 @@ nav > a {
 .about {
     display: flex;
     justify-content: center;
-    height: calc(100vh + (var(--footer-height)));
+    min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
     margin-bottom: 53px;
     overflow: hidden;
 }
@@ -269,8 +269,6 @@ p {
 .detail-page h3 {
     font-size: 2rem;
 }
-
-
 .vans-detail {
     display: flex;
     flex-direction: column;
@@ -306,4 +304,24 @@ p {
     color: white;
     font-weight: 600;
     margin-top: 52px;
+}
+
+.general-wrapper {
+    margin: 0 auto;
+    min-height: calc(100vh - (var(--footer-height) + var(--header-height)));
+}
+
+.host-nav {
+    margin-top: 2rem;
+}
+
+.host-nav a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.active-link {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #161616;
 }
