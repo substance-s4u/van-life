@@ -24,7 +24,7 @@ function VansList() {
         <div key={van.id} className="van-wrapper">
             <Link to={`./${van.id}`}>
             <img className="van-img" src={van.imageUrl} alt="img" />
-            <div className="van-info">
+            <div className="va n-info">
                 <h4>{van.name}</h4>
                 <p>
                     ${van.price} <br />

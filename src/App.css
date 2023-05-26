@@ -248,6 +248,10 @@ p {
     width: 86px;
 }
 
+.van-wrapper button {
+    margin-top: 7px;
+}
+
 .van-img {
     max-height: 100%;
     width: 100%;
@@ -263,7 +267,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: calc(100vh - (var(--footer-height) + var(--header-height)));
+    height: calc(100vh (var(--footer-height) + var(--header-height)));
 }
 
 .detail-page h3 {
@@ -313,15 +317,91 @@ p {
 
 .host-nav {
     margin-top: 2rem;
+    margin-bottom: 45px;
 }
 
 .host-nav a {
-    margin-left: 10px;
+    margin-right: 10px;
     text-decoration: none;
 }
 
-.active-link {
+a.active-link {
     font-weight: bold;
     text-decoration: underline;
     color: #161616;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #161616;
+}
+
+.host-van-list {
+    display: flex;
+    height: 102px;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: rgba(255, 247, 237, 1);
+}
+
+.host-van-list span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.host-vans-wrapper {
+    text-decoration: none;
+    font-size: 20px;
+    color: #161616;
+}
+.host-vins-title {
+    margin-bottom: 2rem;
+}
+
+.host-van-list img {
+    padding: 18px 18px 18px 24px;
+    height: 100%;
+}
+
+.host {
+    margin-bottom: 4rem;
+}
+
+.host-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 37px;
+    padding: 23px 25px;
+    background-color: rgba(255, 247, 237, 1);
+}
+
+.host-details-wrapper img {
+    height: 200px;
+    margin-right: 20px;
+    margin-bottom: 26px;
+}
+
+.host-van-hero{
+    display: flex;
+    align-items: center;
+}
+
+.host-van-nav a {
+    margin-right: 21px;
+    color: #161616;
+    text-decoration: none;
+}
+
+.host-details-info {
+    margin-top: 27px;
+}
+
+.host-details-info p{
+    font-size: 1rem;
+    margin-top: 15px;
+    
+}
+
+.host-d {
+    padding-bottom: 45px;
+    
 }

@@ -1,13 +1,13 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function Header() {
     return (
         <header className="header">
             <div className="header-wrapper container">
-                <NavLink to="/">
+                <Link to="/">
                     <h1>#VANLIFE</h1>
-                </NavLink>
+                </Link>
                 <nav>
                     <NavLink
                         className={({ isActive }) =>
